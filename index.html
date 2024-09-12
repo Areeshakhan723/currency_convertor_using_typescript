@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>create a currency convertor</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="containor">
+      <h1>Currency Convertor</h1>
+      <form>
+      <!-- 1st div: Input for amount -->
+        <div id="amount">
+          <p>Enter amount</p>
+          <input value="1" type="number" />
+        </div>
+
+          <!-- 2nd div: Dropdowns for selecting currencies -->
+        <div id="dropdown">
+          <!-- From currency selection -->
+          <div class="from">
+            <p>From</p>
+            <div class="select_containor">
+              <img src="https://flagsapi.com/US/flat/64.png" />
+              <select name="from"></select>
+            </div>
+          </div>
+
+          <!-- To currency selection -->
+          <div class="to">
+            <p>To</p>
+            <div class="select_containor">
+              <img src="https://flagsapi.com/FR/flat/64.png" />
+              <select name="to"></select>
+            </div>
+          </div>
+        </div>
+
+          <!-- msg -->
+           <p class="msg">1 USD = 1.50 AUD</p>
+
+           <!-- button -->
+           <button id="btn">Exchange the rate</button>
+      </form>
+    </div>
+     <!-- Include the TypeScript module for functionality -->
+    <script type="module" src="./index.js"></script>
+
+  </body>
+</html>
